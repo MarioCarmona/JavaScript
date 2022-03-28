@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex by Mario</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="contenedor">
+        <div class = "header">
+            <h1>POKEDEX LAUNCHX by Mario</h1>
+        </div>
+                <section>
+                    <div class="informacion">
+                        <div class="imagen">
+                            <input type="text" placeholder="Ingresa Pokemon o Id" id="nombrepokemon" name="nombrepokemon"><br><br>
+                            <button onclick="fetchPokemon()">Busca Pokemon</button><br><br><br>
+                            <img src="./img/logo.jpg"  alt="logopokemon" id="imgpokemon" width="200px"><br>
+                            <h2 id="Nombrereal"></h2>
+                            <h5 class="centrartext" id="tipo"></h5>
+                            <h5 class="centrartext" id="tipo2"></h5>
+                        </div>
+                        <div class="estadisticas left">--ESTADISTICAS--
+                                <div >Hp</div><div id="hp"></div><br>
+                                <div >Attack</div><div id="atack"></div><br>
+                                <div >Defense</div><div id="def"></div><br>
+                                <div >Special<br>Attack</div><div id="spatack"></div><br>
+                                <div >Special<br>Defense</div><div id="spdef"></div><br>
+                                <div >Speed</div><div id="sped"></div><br>
+                        </div>
+                    </div>  
+                    <div class="movimientos centrar">--MOVIMIENTOS--<hr>
+                        <div id="movimientos">
+                        </div>
+                    </div> 
+                    </div>
+                </section>
+    </div>
+    <div>
+    </div>
+<footer>
+    <script src="./pokedex.js"></script>
+</footer>
+</html>
